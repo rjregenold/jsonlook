@@ -8,7 +8,7 @@ A QuickLook plugin for OSX that pretty prints the contents of JSON files.
 
         $ mkdir -p ~/Library/QuickLook
 
-2. Either build the plugin from source or download the `qlgenerator` file and
+2. Either build the plugin from source or download the `qlgenerator` archive file, unzip it and
    place it inside the directory you just created.
 
 3. Refresh the generators.
