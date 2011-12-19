@@ -11,8 +11,6 @@
 			<string>QLGenerator</string>
 			<key>LSItemContentTypes</key>
 			<array>
-        <string>public.source-code</string>
-        <string>public.data</string>
         <string>public.json</string>
 			</array>
       <key>LSTypeIsPackage</key>
