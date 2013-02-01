@@ -13,6 +13,7 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
                            @"text/plain", kQLPreviewPropertyMIMETypeKey,
                            [NSNumber numberWithInt:700], kQLPreviewPropertyWidthKey,
                            [NSNumber numberWithInt:800], kQLPreviewPropertyHeightKey,
+                           @"UTF-8", kQLPreviewPropertyTextEncodingNameKey,
                            nil];
     QLPreviewRequestSetDataRepresentation(preview, (CFDataRef)[LEOPrettyPrinter prettyJSONDataWithURL:(NSURL *)url], kUTTypeHTML, (CFDictionaryRef)props);
   }

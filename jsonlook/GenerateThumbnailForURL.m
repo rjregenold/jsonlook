@@ -9,10 +9,7 @@ void CancelThumbnailGeneration(void *thisInterface, QLThumbnailRequestRef thumbn
 
 OSStatus GenerateThumbnailForURL(void *thisInterface, QLThumbnailRequestRef thumbnail, CFURLRef url, CFStringRef contentTypeUTI, CFDictionaryRef options, CGSize maxSize) {
   @autoreleasepool {
-    NSDictionary *props = [NSDictionary dictionaryWithObjectsAndKeys:
-                           @"text/plain", kQLPreviewPropertyMIMETypeKey,
-                           nil];
-    QLThumbnailRequestSetThumbnailWithDataRepresentation(thumbnail, (CFDataRef)[LEOPrettyPrinter prettyJSONDataWithURL:(NSURL *)url], kUTTypeHTML, (CFDictionaryRef)props, NULL);
+    QLThumbnailRequestSetThumbnailWithDataRepresentation(thumbnail, (CFDataRef)[LEOPrettyPrinter prettyJSONDataWithURL:(NSURL *)url], kUTTypeHTML, NULL, NULL);
   }
   return noErr;
 }

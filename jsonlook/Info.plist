@@ -11,9 +11,9 @@
 			<string>QLGenerator</string>
 			<key>LSItemContentTypes</key>
 			<array>
-        <string>public.json</string>
+				<string>public.json</string>
 			</array>
-      <key>LSTypeIsPackage</key>
+			<key>LSTypeIsPackage</key>
 			<false/>
 			<key>CFBundleTypeExtensions</key>
 			<array>
@@ -22,7 +22,7 @@
 			<key>CFBundleTypeOSTypes</key>
 			<array>
 				<string>JSON</string>
-			</array>      
+			</array>
 		</dict>
 	</array>
 	<key>CFBundleExecutable</key>
